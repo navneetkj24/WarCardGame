@@ -50,14 +50,17 @@ public class Game {
                 "-------------------------------------------------------------------------------------------------");
 
         if (playGame == 1) {
-
+            Scanner s = new Scanner(System.in);
             for (int i = 0; i < 15; i++) {
 
-                Cards playerOneTopCard = playerOneDeck.get(i);
-                Cards playerTwoTopCard = playerTwoDeck.get(i);
-
+                System.out.println("Enter any number from keyboard");
+                int a = s.nextInt();
+                Cards playerOneTopCard = playerOneDeck.get(a);
                 System.out.println("Play One's top card is: " + playerOneTopCard);
-                System.out.println("VS");
+                System.out.println("Enter any number from keyboard");
+                int b = s.nextInt();
+                Cards playerTwoTopCard = playerTwoDeck.get(b);
+
                 System.out.println("Play Two's top card is: " + playerTwoTopCard);
                 int comparable = playerOneTopCard.compareTo(playerTwoTopCard);
                 System.out.println(
@@ -113,4 +116,5 @@ public class Game {
         }
     }
 }
+
 
