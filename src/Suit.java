@@ -4,3 +4,4 @@ public enum Suit {
     Spades,
     Clubs,
 }
+
